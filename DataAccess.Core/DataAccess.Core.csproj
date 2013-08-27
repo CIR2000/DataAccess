@@ -47,7 +47,6 @@
     <Compile Include="IRequestBase.cs" />
     <Compile Include="IResponse.cs" />
     <Compile Include="Sort.cs" />
-    <Compile Include="TestClass.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
