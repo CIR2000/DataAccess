@@ -44,6 +44,34 @@ namespace DataAccess
 		/// <param name="request">A request instance.</param>
 		/// <typeparam name="T">The type to be returned.</typeparam>
 		public abstract Response<T> Get<T>(GetRequestItem request);
+
+		/// <summary>
+		/// Initializes a new instance of the <see cref="DataAccess.DataReader"/> class.
+		/// </summary>
+		public DataReader() : this(null, null) { }
+
+		/// <summary>
+		/// Initializes a new instance of the <see cref="RESTDataAccess.RESTDataReader"/> class.
+		/// </summary>
+		/// <param name="dataSourceName">Data source name.</param>
+		public DataReader(string dataSourceName) : this(dataSourceName, null) { }
+
+		/// <summary>
+		/// Initializes a new instance of the <see cref="RESTDataAccess.RESTDataReader"/> class.
+		/// </summary>
+		/// <param name="auth">Authentication.</param>
+		public DataReader(Authentication auth) : this(null, auth) { }
+
+		/// <summary>
+		/// Initializes a new instance of the <see cref="RESTDataAccess.RESTDataReader"/> class.
+		/// </summary>
+		/// <param name="dataSourceName">Data source name.</param>
+		/// <param name="auth">Authentication.</param>
+		public DataReader(string dataSourceName, Authentication auth)
+		{
+			DataSourceName = dataSourceName;
+			Authentication = auth;
+		}
 	}
 
 }
