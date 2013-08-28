@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace DataAccess
@@ -29,7 +30,7 @@ namespace DataAccess
 		/// Parses the filters.
 		/// </summary>
 		/// <returns>An executable filter command string ready to be issued against the data store.</returns>
-		protected  string ParseFilters () {
+		protected  string ParseFilters (IList<Filter> filters) {
 			return null;
 		}
 
@@ -45,7 +46,7 @@ namespace DataAccess
 		/// </summary>
 		/// <param name="request">A request instance.</param>
 		/// <typeparam name="T">The type to be returned.</typeparam>
-		public abstract Response<T> Get<T>(GetRequestItem request);
+		public abstract Response<T> Get<T> (GetRequestItem request);
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="DataAccess.DataReader"/> class.
