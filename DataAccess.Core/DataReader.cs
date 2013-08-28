@@ -29,7 +29,9 @@ namespace DataAccess
 		/// Parses the filters.
 		/// </summary>
 		/// <returns>An executable filter command string ready to be issued against the data store.</returns>
-		protected abstract string ParseFilters ();
+		protected  string ParseFilters () {
+			return null;
+		}
 
 		/// <summary>
 		/// Returns one or multiple documents from the datasource.
