@@ -3,10 +3,7 @@ using System.Net;
 
 namespace DataAccess
 {
-	/// <summary>
-	/// Implements the IResponse interface.
-	/// </summary>
-	public interface IResponse<T>
+	public class Response<T> 
 	{
 		/// <summary>
 		/// Gets or sets the response status.
@@ -45,9 +42,26 @@ namespace DataAccess
 		T Content { get; set; }
 	}
 
-//	public interface IRestResponse<T> : IResponse<T>
-//	{
-//		HttpStatusCode HttpStatuCode { get; set; }
-//	}
-	
+	/// <summary>
+	/// Response status.
+	/// </summary>
+	public enum ResponseStatus
+	{
+		None,
+		Completed,
+		Error,
+		TimedOut,
+		Aborted,
+	}
+
+	// TODO
+	/// <summary>
+	/// Status code.
+	/// </summary>
+	public enum StatusCode
+	{
+		Accepted = 202,
+		Ambiguous,
+		NotAvailable,
+	}
 }

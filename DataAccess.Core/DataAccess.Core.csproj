@@ -41,12 +41,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Authentication.cs" />
     <Compile Include="DataReader.cs" />
-    <Compile Include="Enums.cs" />
     <Compile Include="Filter.cs" />
-    <Compile Include="IGetRequest.cs" />
-    <Compile Include="IRequestBase.cs" />
-    <Compile Include="IResponse.cs" />
     <Compile Include="Sort.cs" />
+    <Compile Include="Response.cs" />
+    <Compile Include="RequestBase.cs" />
+    <Compile Include="GetRequest.cs" />
+    <Compile Include="GetRequestItem.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
