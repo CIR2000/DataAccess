@@ -39,14 +39,14 @@ namespace DataAccess
 		/// </summary>
 		/// <param name="request">A request instance.</param>
 		/// <typeparam name="T">The type to be returned.</typeparam>
-		public abstract Response<T> Get<T> (GetRequest request);
+		public abstract Response<T> Get<T> (GetRequest request) where T: new();
 
 		/// <summary>
 		/// Returns an individual item from the datasource.
 		/// </summary>
 		/// <param name="request">A request instance.</param>
 		/// <typeparam name="T">The type to be returned.</typeparam>
-		public abstract Response<T> Get<T> (GetRequestItem request);
+		public abstract Response<T> Get<T> (GetRequestItem request) where T: new();
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="DataAccess.DataReader"/> class.
