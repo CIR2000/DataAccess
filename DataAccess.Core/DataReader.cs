@@ -36,14 +36,14 @@ namespace DataAccess
 		/// </summary>
 		/// <param name="request">A request instance.</param>
 		/// <typeparam name="T">The type to be returned.</typeparam>
-		public abstract IResponse<T> Get<T> (IGetRequest request);
+		public abstract Response<T> Get<T> (GetRequest request);
 
 		/// <summary>
 		/// Returns an individual item from the datasource.
 		/// </summary>
 		/// <param name="request">A request instance.</param>
 		/// <typeparam name="T">The type to be returned.</typeparam>
-		public abstract IResponse<T> Get<T>(IGetRequestItem request);
+		public abstract Response<T> Get<T>(GetRequestItem request);
 	}
 
 }
