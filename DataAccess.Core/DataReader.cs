@@ -70,7 +70,7 @@ namespace DataAccess
 		/// </summary>
 		/// <param name="dataSourceName">Data source name.</param>
 		/// <param name="auth">Authentication.</param>
-		public DataReader(string dataSourceName, Authentication auth)
+		public DataReader(string dataSourceName, Authentication auth) : this()
 		{
 			DataSourceName = dataSourceName;
 			Authentication = auth;
