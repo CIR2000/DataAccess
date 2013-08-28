@@ -29,4 +29,32 @@ namespace DataAccess
 		/// <value>The concatenation.</value>
 		public ConcatenationOperator Concatenation { get; set; }
 	}
+
+    /// <summary>
+    /// Comparison operators.
+    /// </summary>
+    public enum ComparisonOperator
+    {
+        BeginsWith,
+        Contains,
+        Different,
+        Empty,
+        EndsWith,
+        GreaterThan,
+        GreaterThenOrEqual,
+        LessThan,
+        LessThanOrEqual,
+        NotContains,
+        NotEmpty,
+        Equal,
+    }
+
+    /// <summary>
+    /// Concatenation operators.
+    /// </summary>
+    public enum ConcatenationOperator
+    {
+        And,
+        Or,
+    }
 }

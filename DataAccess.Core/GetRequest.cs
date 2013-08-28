@@ -27,41 +27,4 @@ namespace DataAccess
 		/// <value>The If-Modified-Since value.</value>
 		DateTime IfModifiedSince { get; set; }
 	}
-
-	/// <summary>
-	/// Comparison operators.
-	/// </summary>
-	public enum ComparisonOperator
-    {
-        BeginsWith,
-        Contains,
-        Different,
-        Empty,
-        EndsWith,
-        GreaterThan,
-        GreaterThenOrEqual,
-        LessThan,
-        LessThanOrEqual,
-        NotContains,
-        NotEmpty,
-        Equal,
-    }
-
-	/// <summary>
-	/// Concatenation operators.
-	/// </summary>
-	public enum ConcatenationOperator
-    {
-        And,
-        Or,
-    }
-
-	/// <summary>
-	/// Sort directions.
-	/// </summary>
-	public enum SortDirection
-    {
-        Ascending,
-        Descending,
-    }
 }
