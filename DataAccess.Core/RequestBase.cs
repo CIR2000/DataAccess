@@ -10,18 +10,18 @@ namespace DataAccess
 		/// Gets or sets the data source.
 		/// </summary>
 		/// <value>The data source.</value>
-		string DataSourceName { get; set; }
+		public string DataSourceName { get; set; }
 
 		/// <summary>
 		/// Gets or sets the request authentication.
 		/// </summary>
 		/// <value>The authentication.</value>
-		Authentication Authentication { get; set; }
+		public Authentication Authentication { get; set; }
 
 		/// <summary>
 		/// Gets or sets the target resource.
 		/// </summary>
 		/// <value>The resource name.</value>
-		string Resource { get; set; }
+		public string Resource { get; set; }
 	}
 }

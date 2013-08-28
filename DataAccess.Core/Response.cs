@@ -9,37 +9,37 @@ namespace DataAccess
 		/// Gets or sets the response status.
 		/// </summary>
 		/// <value>The response status.</value>
-		ResponseStatus Status { get; set; }
+		public ResponseStatus Status { get; set; }
 
 		/// <summary>
 		/// Gets or sets the status description.
 		/// </summary>
 		/// <value>The status description.</value>
-		string StatusDescription { get; set; }
+		public string StatusDescription { get; set; }
 
 		/// <summary>
 		/// Gets or sets the status code returned.
 		/// </summary>
 		/// <value>The status code.</value>
-		StatusCode StatusCode { get; set; }
+		public StatusCode StatusCode { get; set; }
 
 		/// <summary>
 		/// Gets or sets the error message.
 		/// </summary>
 		/// <value>The error message.</value>
-		string ErrorMessage { get; set; }
+		public string ErrorMessage { get; set; }
 
 		/// <summary>
 		/// Gets or sets the error exception.
 		/// </summary>
 		/// <value>The error exception.</value>
-		Exception ErrorException { get; set; }
+		public Exception ErrorException { get; set; }
 
 		/// <summary>
 		/// Gets or sets the response content.
 		/// </summary>
 		/// <value>The response content.</value>
-		T Content { get; set; }
+		public T Content { get; set; }
 	}
 
 	/// <summary>
