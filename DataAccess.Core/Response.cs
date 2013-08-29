@@ -9,7 +9,7 @@ namespace DataAccess
 		/// Gets or sets the response status.
 		/// </summary>
 		/// <value>The response status.</value>
-		public ResponseStatus Status { get; set; }
+		public ResponseStatus ResponseStatus { get; set; }
 
 		/// <summary>
 		/// Gets or sets the status description.
