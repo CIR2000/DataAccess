@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace DataAccess
 {
 	/// <summary>
@@ -28,6 +30,12 @@ namespace DataAccess
 		/// </summary>
 		/// <value>The concatenation.</value>
 		public ConcatenationOperator Concatenation { get; set; }
+
+        /// <summary>
+        /// IList of filter objects children of filter that contains them
+        /// </summary>
+        /// /// <value>List of filter objects</value>
+        public IList<Filter> Filters { get; set; }
 	}
 
     /// <summary>
