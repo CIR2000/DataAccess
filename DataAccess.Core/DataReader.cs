@@ -76,5 +76,4 @@ namespace DataAccess
 			Authentication = auth;
 		}
 	}
-
 }
