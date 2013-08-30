@@ -46,14 +46,12 @@ namespace DataAccess
         BeginsWith,
         Contains,
         Different,
-        Empty,
         EndsWith,
         GreaterThan,
         GreaterThenOrEqual,
         LessThan,
         LessThanOrEqual,
         NotContains,
-        NotEmpty,
         Equal,
     }
 
