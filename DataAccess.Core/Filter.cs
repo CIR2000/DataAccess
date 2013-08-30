@@ -45,7 +45,7 @@ namespace DataAccess
     {
         BeginsWith,
         Contains,
-        Different,
+        NotEqual,
         EndsWith,
         GreaterThan,
         GreaterThenOrEqual,
