@@ -7,9 +7,9 @@ namespace DataAccess
 	{
 
 		/// <summary>
-		/// Gets or sets the data source.
+		/// Gets or sets the data source name name or address (DB name, API uri, etc.)
 		/// </summary>
-		/// <value>The data source.</value>
+		/// <value>The data source name or address.</value>
 		public string DataSourceName { get; set; }
 
 		/// <summary>
