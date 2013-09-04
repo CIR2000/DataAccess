@@ -43,10 +43,13 @@
     <Compile Include="DataReader.cs" />
     <Compile Include="Sort.cs" />
     <Compile Include="Response.cs" />
-    <Compile Include="RequestBase.cs" />
     <Compile Include="GetRequest.cs" />
     <Compile Include="GetRequestItem.cs" />
     <Compile Include="Filters.cs" />
+    <Compile Include="GetRequestBase.cs" />
+    <Compile Include="IGetRequestBase.cs" />
+    <Compile Include="IGetRequest.cs" />
+    <Compile Include="IGetRequestItem.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
 </Project>
