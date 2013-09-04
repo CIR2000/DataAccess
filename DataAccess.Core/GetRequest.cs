@@ -13,7 +13,7 @@ namespace DataAccess
 		/// Gets or sets the filters.
 		/// </summary>
 		/// <value>The filters.</value>
-		public IList<Filter> Filters { get; set; }
+		public IList<IFilter> Filters { get; set; }
 
 		/// <summary>
 		/// Gets or sets the sort.
