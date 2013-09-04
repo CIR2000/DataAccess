@@ -30,7 +30,7 @@ namespace DataAccess
 		/// Parses the filters.
 		/// </summary>
 		/// <returns>An executable filter command string ready to be issued against the data store.</returns>
-		protected virtual string ParseFilters (IList<Filter> filters) {
+		protected virtual string ParseFilters (IList<IFilter> filters) {
 			return null;
 		}
 
