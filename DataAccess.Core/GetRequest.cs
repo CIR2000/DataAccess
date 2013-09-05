@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace DataAccess
@@ -26,5 +25,11 @@ namespace DataAccess
 		/// </summary>
 		/// <value>The If-Modified-Since value.</value>
 		public DateTime IfModifiedSince { get; set; }
+
+		public GetRequest()
+		{
+			Filters = new List<IFilter> ();
+			Sort = new List<Sort> ();
+		}
 	}
 }
