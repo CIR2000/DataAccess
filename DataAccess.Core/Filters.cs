@@ -38,8 +38,17 @@ namespace DataAccess
 	/// </summary>
 	public class Filter : IFilter
 	{
+        /// <summary>
+        /// Base constructor without parameter
+        /// </summary>
         public Filter() { }
 
+        /// <summary>
+        /// Constructor with necessary parameter
+        /// </summary>
+        /// <param name="field">Field name for filter</param>
+        /// <param name="comparator">Comparator operator</param>
+        /// <param name="value">Value for comparison</param>
         public Filter(string field, Comparison comparator, object value) : this ()
         {
             Field = field;
@@ -47,6 +56,13 @@ namespace DataAccess
             Value = value;
         }
 
+        /// <summary>
+        /// Constructor with all parameter
+        /// </summary>
+        /// <param name="field">Field name for filter</param>
+        /// <param name="comparator">Comparator operator</param>
+        /// <param name="value">Value for comparison</param>
+        /// <param name="concatenator">Operator of concatenation with next filter</param>
         public Filter(string field, Comparison comparator, object value, Concatenation concatenator) : this(field, comparator, value)
         {
             Concatenator = concatenator;
