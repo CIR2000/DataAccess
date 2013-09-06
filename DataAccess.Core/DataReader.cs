@@ -34,6 +34,14 @@ namespace DataAccess
 			return null;
 		}
 
+        /// <summary>
+        /// Parses the sorts.
+        /// </summary>
+        /// <returns>An executable sort command string ready to be issued against the data store.</returns>
+        protected virtual string ParseSorts(IList<Sort> orders) {
+            return null;
+        }
+
 		/// <summary>
 		/// Returns one or multiple documents from the datasource.
 		/// </summary>
