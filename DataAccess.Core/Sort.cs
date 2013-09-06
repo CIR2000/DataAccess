@@ -5,6 +5,22 @@ namespace DataAccess
 	/// </summary>
 	public class Sort 
 	{
+        /// <summary>
+        /// Base constructor without parameter
+        /// </summary>
+        public Sort() { }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="field">Field name for sort</param>
+        /// <param name="direction">Direction of sort</param>
+        public Sort(string field, SortDirection direction) : this()
+        {
+            Field = field;
+            Direction = direction;
+        }
+
 		/// <summary>
 		/// Gets or sets the name.
 		/// </summary>
