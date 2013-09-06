@@ -38,6 +38,20 @@ namespace DataAccess
 	/// </summary>
 	public class Filter : IFilter
 	{
+        public Filter() { }
+
+        public Filter(string field, Comparison comparator, object value) : this ()
+        {
+            Field = field;
+            Comparator = comparator;
+            Value = value;
+        }
+
+        public Filter(string field, Comparison comparator, object value, Concatenation concatenator) : this(field, comparator, value)
+        {
+            Concatenator = concatenator;
+        }
+
 		/// <summary>
 		/// Gets or sets the field name.
 		/// </summary>
