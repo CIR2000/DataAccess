@@ -38,13 +38,13 @@ namespace DataAccess
 	/// </summary>
 	public class Filter : IFilter
 	{
-        /// <summary>
-        /// Base constructor without parameter
-        /// </summary>
+		/// <summary>
+		/// Initializes a new instance of the <see cref="DataAccess.Filter"/> class.
+		/// </summary>
         public Filter() { }
 
         /// <summary>
-        /// Constructor with necessary parameter
+		/// Initializes a new instance of the <see cref="DataAccess.Filter"/> class.
         /// </summary>
         /// <param name="field">Field name for filter</param>
         /// <param name="comparator">Comparator operator</param>
