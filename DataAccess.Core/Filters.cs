@@ -31,6 +31,12 @@ namespace DataAccess
 		/// </summary>
 		/// <value>The concatenator.</value>
 		public Concatenation Concatenator { get; set; }
+
+		public FiltersGroup()
+		{
+			Filters = new List<IFilter> ();
+			Concatenator = Concatenation.And;
+		}
 	}
 
 	/// <summary>
