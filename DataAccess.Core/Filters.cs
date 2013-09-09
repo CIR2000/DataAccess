@@ -47,7 +47,10 @@ namespace DataAccess
 		/// <summary>
 		/// Initializes a new instance of the <see cref="DataAccess.Filter"/> class.
 		/// </summary>
-        public Filter() { }
+        public Filter() 
+		{
+			Concatenator = Concatenation.And; 
+		}
 
         /// <summary>
 		/// Initializes a new instance of the <see cref="DataAccess.Filter"/> class.
