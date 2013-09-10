@@ -58,6 +58,20 @@ namespace DataAccess
 		public abstract Response<T> Get<T> (IGetRequestItem request) where T: new();
 
 		/// <summary>
+		/// Asynchronously gets one or multiple documents from the datasource.
+		/// </summary>
+		/// <param name="request">A request instance.</param>
+		/// <typeparam name="T">The type to be returned.</typeparam>
+		public abstract void GetAsync<T> (IGetRequest request, Action<Response<T>, IGetRequest> callback) where T: new();
+
+		/// <summary>
+		/// Asynchronously gets an individual item from the datasource.
+		/// </summary>
+		/// <param name="request">A request instance.</param>
+		/// <typeparam name="T">The type to be returned.</typeparam>
+		public abstract void GetAsync<T> (IGetRequestItem request, Action<Response<T>, IGetRequestItem> callback) where T: new();
+
+		/// <summary>
 		/// Initializes a new instance of the <see cref="DataAccess.DataReader"/> class.
 		/// </summary>
 		public DataReader() : this(null, null) { }
