@@ -23,6 +23,6 @@ namespace DataAccess
 		/// Gets or sets the If-Modified-Since filter. Request only documents modified since this date. 
 		/// </summary>
 		/// <value>The If-Modified-Since value.</value>
-		DateTime IfModifiedSince { get; set; }
+		DateTime? IfModifiedSince { get; set; }
 	}
 }
