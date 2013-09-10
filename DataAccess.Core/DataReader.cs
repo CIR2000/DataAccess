@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace DataAccess
 {
@@ -82,6 +83,21 @@ namespace DataAccess
 		{
 			DataSourceName = dataSourceName;
 			Authentication = auth;
+		}
+
+		/// <summary>
+		/// Gets the API field name out of a given Type.
+		/// </summary>
+		/// <returns>The API field name.</returns>
+		/// <param name="field">Field name.</param>
+		/// <param name="typeOfT">Type of T.</param>
+		protected string GetMappedFieldName(string field, Type typeOfT) {
+			var propertyInfo = typeOfT.GetProperty (field);
+			Object[] myAttributes = propertyInfo.GetCustomAttributes (typeof(DataMemberAttribute), true);
+			if (myAttributes.Length > 0)
+				return ((DataMemberAttribute)myAttributes [0]).Name;
+			else
+				return propertyInfo.Name;
 		}
 	}
 }
