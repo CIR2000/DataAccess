@@ -38,7 +38,7 @@ namespace DataAccess
         /// Parses the sorts.
         /// </summary>
         /// <returns>An executable sort command string ready to be issued against the data store.</returns>
-        protected virtual string ParseSorts(IList<Sort> orders) {
+        protected virtual string ParseSort(IList<Sort> orders) {
             return null;
         }
 
