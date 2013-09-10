@@ -61,6 +61,7 @@ namespace DataAccess
 	public enum StatusCode
 	{
 		Accepted = 202,
+		NotModified = 304,
 		Ambiguous,
 		NotAvailable,
 	}
