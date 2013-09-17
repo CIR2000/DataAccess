@@ -8,7 +8,10 @@ namespace DataAccess
 		/// <summary>
 		/// Initializes a new instance of the <see cref="DataAccess.Sort"/> class.
 		/// </summary>
-        public Sort() { }
+        public Sort() 
+		{
+			Direction = SortDirection.Ascending;
+		 }
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="DataAccess.Sort"/> class.
@@ -40,6 +43,6 @@ namespace DataAccess
     public enum SortDirection
     {
         Ascending,
-        Descending,
+		Descending,
     }
 }
