@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Core", "DataAccess.Core\DataAccess.Core.csproj", "{343489EB-B715-41C8-A946-BCFD0BBE1B12}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.Core.Tests", "DataAccess.Core.Tests\DataAccess.Core.Tests.csproj", "{9B793C10-5C5D-4CBA-9F95-1603E5EA4A95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{343489EB-B715-41C8-A946-BCFD0BBE1B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{343489EB-B715-41C8-A946-BCFD0BBE1B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{343489EB-B715-41C8-A946-BCFD0BBE1B12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B793C10-5C5D-4CBA-9F95-1603E5EA4A95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B793C10-5C5D-4CBA-9F95-1603E5EA4A95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B793C10-5C5D-4CBA-9F95-1603E5EA4A95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B793C10-5C5D-4CBA-9F95-1603E5EA4A95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = DataAccess.Core\DataAccess.Core.csproj
