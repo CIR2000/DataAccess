@@ -14,7 +14,7 @@ namespace DataAccess.Core.Tests
 		public void BaseConstructor ()
 		{
 			request = new GetRequest ();
-			Assert.IsInstanceOf<IList<IFilter>> (request.Filters);
+			Assert.IsInstanceOf<IList<Filter>>(request.Filters);
 			Assert.IsEmpty (request.Filters);
 			Assert.IsInstanceOf<List<Sort>> (request.Sort);
 			Assert.IsEmpty (request.Sort);
