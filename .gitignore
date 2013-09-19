@@ -8,3 +8,4 @@ Components
 *.Designer.cs
 *.designer.cs
 [Tt]est[Rr]esult*
+test-results*
