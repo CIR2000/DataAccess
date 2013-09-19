@@ -56,10 +56,11 @@ namespace DataAccess
 
 		public Request()
 		{
+			Method = Methods.Read;
 			Filters = new List<IFilter> ();
 			Sort = new List<Sort> ();
 			IfModifiedSince = null;
-			Method = Methods.Read;
+			IfNoneMatch = null;
 		}
 	}
 }
