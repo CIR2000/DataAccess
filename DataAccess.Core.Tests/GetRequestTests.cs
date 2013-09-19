@@ -14,10 +14,10 @@ namespace DataAccess.Core.Tests
 		public void BaseConstructor ()
 		{
 			request = new GetRequest ();
-			Assert.IsInstanceOf<IList<Filter>>(request.Filters);
-			Assert.IsEmpty (request.Filters);
-			Assert.IsInstanceOf<List<Sort>> (request.Sort);
-			Assert.IsEmpty (request.Sort);
+			Assert.IsInstanceOfType (typeof(IList<IFilter>), request.Filters);
+			Assert.AreEqual (0, request.Filters.Count);
+			Assert.IsInstanceOfType(typeof(IList<Sort>), (request.Sort));
+			Assert.AreEqual (0, request.Sort.Count);
 //			Assert.IsNull (request.IfModifiedSince);
 		}
 	}

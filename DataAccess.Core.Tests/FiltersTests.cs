@@ -47,7 +47,7 @@ namespace DataAccess.Core.Tests
 		public void BaseConstructor()
 		{
 			FiltersGroup fg = new FiltersGroup ();
-			Assert.IsInstanceOf<IList<IFilter>> (fg.Filters);
+			Assert.IsInstanceOfType (typeof(IList<IFilter>), fg.Filters);
 			Assert.IsEmpty (fg.Filters);
 			Assert.AreEqual (Concatenation.And, fg.Concatenator);
 		}
