@@ -1,12 +1,28 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace DataAccess
 {
-
-	public interface IGetRequest : IRequestBase
+	public interface IRequest
 	{
+		/// <summary>
+		/// Gets or sets the data source name name or address (DB name, API uri, etc.)
+		/// </summary>
+		/// <value>The data source name or address.</value>
+		string DataSourceName { get; set; }
+
+		/// <summary>
+		/// Gets or sets the request authentication.
+		/// </summary>
+		/// <value>The authentication.</value>
+		Authentication Authentication { get; set; }
+
+		/// <summary>
+		/// Gets or sets the target resource.
+		/// </summary>
+		/// <value>The resource name.</value>
+		string Resource { get; set; }
+
 		/// <summary>
 		/// Gets or sets the filters.
 		/// </summary>
@@ -38,5 +54,13 @@ namespace DataAccess
 		/// </summary>
 		/// <value>The item identifier.</value>
 		int? DocumentId { get; set; }
+	}
+
+	enum Methods
+	{
+		Get,
+		Insert,
+		Update,
+		Replace,
 	}
 }

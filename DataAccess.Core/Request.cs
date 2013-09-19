@@ -6,8 +6,32 @@ namespace DataAccess
 	/// <summary>
 	/// Used in Gets when multiple documents are needed.
 	/// </summary>
-	public class GetRequest : RequestBase, IGetRequest  
+	public class Request : IRequest
 	{
+		/// <summary>
+		/// Gets or sets the data source name name or address (DB name, API uri, etc.)
+		/// </summary>
+		/// <value>The data source name or address.</value>
+		public string DataSourceName { get; set; }
+
+		/// <summary>
+		/// Gets or sets the request authentication.
+		/// </summary>
+		/// <value>The authentication.</value>
+		public Authentication Authentication { get; set; }
+
+		/// <summary>
+		/// Gets or sets the target resource.
+		/// </summary>
+		/// <value>The resource name.</value>
+		public string Resource { get; set; }
+
+		/// <summary>
+		/// Gets or sets the request method.
+		/// </summary>
+		/// <value>The method.</value>
+		Methods Method { get; set; }
+
 		/// <summary>
 		/// Gets or sets the filters.
 		/// </summary>
@@ -30,7 +54,7 @@ namespace DataAccess
 
 		public string IfNoneMatch { get; set; }
 
-		public GetRequest()
+		public Request()
 		{
 			Filters = new List<IFilter> ();
 			Sort = new List<Sort> ();
