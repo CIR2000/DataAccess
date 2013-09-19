@@ -30,7 +30,7 @@ namespace DataAccess
 		/// Gets or sets the request method.
 		/// </summary>
 		/// <value>The method.</value>
-		Methods Method { get; set; }
+		public Methods Method { get; set; }
 
 		/// <summary>
 		/// Gets or sets the filters.

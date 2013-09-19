@@ -54,13 +54,19 @@ namespace DataAccess
 		/// </summary>
 		/// <value>The item identifier.</value>
 		int? DocumentId { get; set; }
+
+		/// <summary>
+		/// Gets or sets the request method.
+		/// </summary>
+		/// <value>The request method.</value>
+		Methods Method { get; set; }
 	}
 
-	enum Methods
+	public enum Methods
 	{
-		Get,
-		Insert,
+		Create,
+		Read,
 		Update,
-		Replace,
+		Delete,
 	}
 }

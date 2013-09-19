@@ -44,18 +44,19 @@ namespace DataAccess
         }
 
 		/// <summary>
-		/// Returns one or multiple documents from the datasource.
+		/// Execute the specified request.
 		/// </summary>
-		/// <param name="request">A request instance.</param>
-		/// <typeparam name="T">The type to be returned.</typeparam>
-		public abstract Response<T> Get<T> (IRequest request) where T: new();
+		/// <param name="request">Request.</param>
+		/// <typeparam name="T">The expected return type .</typeparam>
+		public abstract Response<T> Execute<T> (IRequest request) where T: new();
 
 		/// <summary>
-		/// Asynchronously gets one or multiple documents from the datasource.
-		/// <param name="request">The request instance.</param>
-		/// <param name="callback">The callback function to be invoked.</param>
-		/// <typeparam name="T">The type to be returned.</typeparam>
-		public abstract void GetAsync<T> (IRequest request, Action<Response<T>, IRequest> callback) where T: new();
+		/// Executes an async request.
+		/// </summary>
+		/// <param name="request">Request.</param>
+		/// <param name="callback">Callback.</param>
+		/// <typeparam name="T">The expected return type.</typeparam>
+		public abstract void ExecuteAsync<T> (IRequest request, Action<Response<T>, IRequest> callback) where T: new();
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="DataAccess.DataReader"/> class.
