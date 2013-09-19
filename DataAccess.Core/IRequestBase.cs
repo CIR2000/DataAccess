@@ -1,7 +1,7 @@
 namespace DataAccess
 {
 
-	public interface IGetRequestBase
+	public interface IRequestBase
 	{
 		/// <summary>
 		/// Gets or sets the data source name name or address (DB name, API uri, etc.)

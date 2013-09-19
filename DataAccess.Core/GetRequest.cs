@@ -6,7 +6,7 @@ namespace DataAccess
 	/// <summary>
 	/// Used in Gets when multiple documents are needed.
 	/// </summary>
-	public class GetRequest : GetRequestBase, IGetRequest  
+	public class GetRequest : RequestBase, IGetRequest  
 	{
 		/// <summary>
 		/// Gets or sets the filters.
@@ -25,6 +25,10 @@ namespace DataAccess
 		/// </summary>
 		/// <value>The If-Modified-Since value.</value>
 		public DateTime? IfModifiedSince { get; set; }
+
+		public int? DocumentId { get; set; }
+
+		public string IfNoneMatch { get; set; }
 
 		public GetRequest()
 		{

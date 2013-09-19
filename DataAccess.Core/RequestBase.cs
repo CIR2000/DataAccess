@@ -3,7 +3,7 @@ namespace DataAccess
 	/// <summary>
 	/// Implements the data request interface.
 	/// </summary>
-	public abstract class GetRequestBase : IGetRequestBase
+	public abstract class RequestBase : IRequestBase
 	{
 
 		/// <summary>

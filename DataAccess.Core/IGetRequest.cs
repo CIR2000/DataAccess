@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace DataAccess
 {
 
-	public interface IGetRequest : IGetRequestBase
+	public interface IGetRequest : IRequestBase
 	{
 		/// <summary>
 		/// Gets or sets the filters.
@@ -24,5 +24,19 @@ namespace DataAccess
 		/// </summary>
 		/// <value>The If-Modified-Since value.</value>
 		DateTime? IfModifiedSince { get; set; }
+
+		/// <summary>
+		/// Gets or sets If-None-Match filter. Retrieve a document only if its etag differs from this one.
+		/// </summary>
+		/// <value>If none match.</value>
+		string IfNoneMatch { get; set; }
+
+		/// <summary>
+		/// Gets or sets the item identifier. 
+		/// If set, it will be used to retrieve a single document by its unique id. 
+		/// Eventual Filters and Sort conditions will be ignored.
+		/// </summary>
+		/// <value>The item identifier.</value>
+		int? DocumentId { get; set; }
 	}
 }
