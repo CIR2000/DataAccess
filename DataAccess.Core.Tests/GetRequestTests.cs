@@ -8,12 +8,12 @@ namespace DataAccess.Core.Tests
 	[TestFixture ()]
 	public class GetRequestTests
 	{
-		GetRequest request;
+		Request request;
 
 		[Test ()]
 		public void BaseConstructor ()
 		{
-			request = new GetRequest ();
+			request = new Request ();
 			Assert.IsInstanceOfType (typeof(IList<IFilter>), request.Filters);
 			Assert.AreEqual (0, request.Filters.Count);
 			Assert.IsInstanceOfType(typeof(IList<Sort>), (request.Sort));

@@ -7,7 +7,7 @@ namespace DataAccess
 	/// <summary>
 	/// Implements the DataReader abstract.
 	/// </summary>
-	public abstract class DataReader 
+	public abstract class DataAccessBase 
 	{
 		/// <summary>
 		/// Gets or sets the default name of the data source.
@@ -61,26 +61,26 @@ namespace DataAccess
 		/// <summary>
 		/// Initializes a new instance of the <see cref="DataAccess.DataReader"/> class.
 		/// </summary>
-		public DataReader() : this(null, null) { }
+		public DataAccessBase() : this(null, null) { }
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="RESTDataAccess.RESTDataReader"/> class.
 		/// </summary>
 		/// <param name="dataSourceName">Data source name.</param>
-		public DataReader(string dataSourceName) : this(dataSourceName, null) { }
+		public DataAccessBase(string dataSourceName) : this(dataSourceName, null) { }
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="RESTDataAccess.RESTDataReader"/> class.
 		/// </summary>
 		/// <param name="auth">Authentication.</param>
-		public DataReader(Authentication auth) : this(null, auth) { }
+		public DataAccessBase(Authentication auth) : this(null, auth) { }
 
 		/// <summary>
 		/// Initializes a new instance of the <see cref="RESTDataAccess.RESTDataReader"/> class.
 		/// </summary>
 		/// <param name="dataSourceName">Data source name.</param>
 		/// <param name="auth">Authentication.</param>
-		public DataReader(string dataSourceName, Authentication auth)
+		public DataAccessBase(string dataSourceName, Authentication auth)
 		{
 			DataSourceName = dataSourceName;
 			Authentication = auth;
